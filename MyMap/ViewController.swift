@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet weak var inputText: UITextField!
+    
+    @IBOutlet weak var dispMap: MKMapView!
 }
 
