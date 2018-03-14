@@ -30,9 +30,16 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JDf-ch-Mjs">
                                 <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZT-DN-EZN">
+                                <rect key="frame" x="337" y="637" width="22" height="22"/>
+                                <connections>
+                                    <action selector="changeMapButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1g-IA-h2N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pZT-DN-EZN" secondAttribute="trailing" constant="16" id="5gk-En-sPl"/>
                             <constraint firstItem="JDf-ch-Mjs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NBr-yW-i7k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h0Q-8M-qDL" secondAttribute="trailing" id="OZV-cC-YwQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JDf-ch-Mjs" secondAttribute="trailing" id="XXM-hg-q2c"/>
@@ -40,6 +47,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JDf-ch-Mjs" secondAttribute="bottom" id="arK-cd-AUp"/>
                             <constraint firstItem="h0Q-8M-qDL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l47-Uu-lhV"/>
                             <constraint firstItem="JDf-ch-Mjs" firstAttribute="top" secondItem="h0Q-8M-qDL" secondAttribute="bottom" id="qdl-sv-bfS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pZT-DN-EZN" secondAttribute="bottom" constant="8" id="to2-Lk-pmc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
