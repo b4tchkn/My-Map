@@ -50,6 +50,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             let targetCoordinate = location.coordinate
                             
                             print(targetCoordinate)
+                            
+                            // MKPointAnnotationインスタンスを取得しピンを生成
+                            let pin = MKPointAnnotation()
+                            
+                            // ピンの置く場所に緯度経度を設定
+                            pin.coordinate = targetCoordinate
+                            
+                            // ピンのタイトルを設定
+                            pin.title = searchKey
+                            
+                            // ピンを地図に置く
+                            self.dispMap.addAnnotation(pin)
+                            
+                            // 緯度経度を中心にして半径500mの範囲を表示
+                            self.dispMap.region = MKCoordinateRegionMakeWithDistance(targetCoordinate, 500.0, 500.0)
                         }
                     }
                 }
